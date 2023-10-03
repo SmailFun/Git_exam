@@ -15,5 +15,13 @@ class Program
                 resultCount++;
             }
         }
+        string[] finalArray = new string[resultCount];
+        Array.Copy(resultArray, finalArray, resultCount);
+        
+        Console.WriteLine("Отфильтрованный массив строк:");
+        foreach (string word in finalArray)
+        {
+            Console.WriteLine(word);
+        }
     }
 }
